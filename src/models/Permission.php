@@ -28,5 +28,8 @@ class Permission extends AuthItem {
         $item = $authManager->getPermission($name);
         return new self($item);
     }
+    
+    public function afterSave($insert) {
+    }
 
 }
